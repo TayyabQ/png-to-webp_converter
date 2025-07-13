@@ -28,7 +28,6 @@ export const POST = async (req: NextRequest) => {
       convertedName: outputName,
     });
   } catch (error) {
-    console.error('Upload/Convert error:', error);
-    return NextResponse.json({ success: false, message: "An error occured" });
+    return NextResponse.json({ success: false, error });
   }
 };
