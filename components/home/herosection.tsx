@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import { Button } from '../ui/button'
 import { Input } from '../ui/input'
-import useFetch from '@/hooks/useFetch';
+import useFetch from '@/components/hooks/useFetch';
 import { toast } from "sonner"
 
 const Herosection = () => {
